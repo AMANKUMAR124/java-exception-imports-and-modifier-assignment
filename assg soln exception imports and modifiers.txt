@@ -1,0 +1,50 @@
+1. WHAT IS AN EXCEPTION IN JAVA?
+ANS=>  Exception is an unwanted or unexpected event, which occurs during the execution of a program.
+2. WHAT ARE THE TYPES OF EXCEPTION?
+ANS=> THERE Are two types of exception.
+       a.User-defined exception
+       b.built in exception
+               |
+         .checked exception
+         .unchecked exception
+3.HOW ARE EXCEPTION HANDLED IN JAVA?
+ANS=>use of try-catch method.
+
+4. WHAT ARE THE IMPORTANT METHODS DEFINED IN JAVA'S EXCEPTION CLASS?
+ANS=>  a.string getMessage() – This method returns the message String of Throwable and the message can be provided while creating the exception through it’s constructor.
+       b.String getLocalizedMessage() – This method is provided so that subclasses can override it to provide locale specific message to the calling program. Throwable class implementation                              of this method simply use getMessage() method to return the exception message.
+c.synchronized Throwable getCause() – This method returns the cause of the exception or null id the cause is unknown.
+d.String toString() – This method returns the information about Throwable in String format, the returned String contains the name of Throwable class and localized message.
+e.void printStackTrace() – This method prints the stack trace information to the standard error stream, this method is overloaded and we can pass PrintStream or PrintWriter as argument to write the stack trace information to the file or stream. 
+
+5.WHAT ARE RUNTIME EXCEPTION IN JAVA?
+ANS=> runtime exceptions are internal to the application but are not typically recoverable.
+
+6. WHAT IS THE DIFFERENCE BETWEEEN throw and throws keyword?
+ans=> throw-The 'throw' keyword is used to explicitly throw an exception from within a block of code or a method.
+      throws-The 'throws' keyword is used in the method signature to declare the exceptions that a method can potentially throw.
+
+7.   WHAT IS THE DIFFERENCE BETWEEEN EXCEPTION AND ERROR IN JAVA?
+ANS=>    Error- Error are usually caused by serious problems that cannot be recovered .
+         Exception- exceptions are used to handle recoverable errors within a program.
+
+8.EXPLAIN THE HIERARCHY OF EXCEPTION IN JAva?
+ans=>the class at the top of the exception class hierarchy is the Throwable class, which is a direct subclass of the Object class.
+      thorwable is divided into two types .
+      a.error
+      b.exception
+9.DEFINE PACKAGES IN JAVA?
+ANS=>A java package is a group of similar types of classes, interfaces and sub-packages.
+10. WHAT ARE ACCESS MODIFIERS IN JAVA?
+ANS=>  access modifiers are keywords that can be used to control the visibility of fields, methods, and constructors in a class.
+        there four access modifiers.
+        a.private
+        b.public 
+        c.protected
+        d.default
+11.WHAT ARE NON ACCESS MODIFIERS IN JAVA?
+ANS=> there four non-access modifiers.
+      a.static
+      b.final
+      c.abstract
+      d.synchronized
